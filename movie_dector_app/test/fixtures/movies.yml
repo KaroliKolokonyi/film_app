@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  film_name: MyString
+  film_type: MyString
+  film_genre: MyString
+  production_year: 1
+
+two:
+  film_name: MyString
+  film_type: MyString
+  film_genre: MyString
+  production_year: 1
