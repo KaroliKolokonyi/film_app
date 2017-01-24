@@ -1,12 +1,17 @@
 class EntertainmentsController < ApplicationController
 
+   
   def index
     @movies =Movie.all 
 
+    render "movies.html.erb"
+
   end 
 
-    def show 
+  def show 
     @movies = Movie.find_by(id: params[:id])
+
+    # render "movies.html.erb"
 
     end 
 
