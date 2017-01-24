@@ -1,0 +1,10 @@
+<h1>List of all movies</h1>
+<% @movies.each do |movie| %>
+  <h3> <%= movie.film_name %></h3>
+    <ul>
+      <li> <%= movies.film_type %></li>
+      <li> <%= movies.film_genre %></li>
+      <li> <%= movies.production_year%></li>
+    </ul>
+<% end %>
+

@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   
-  get"/all_movies", to: "entertainments#all_movies"
-  get "/the_boss", to: "entertainments#the_boss"
-  get "/arrow", to: "entertainments#arrow"
-  get "/flash", to: "entertainments#the_flash"
+  get "/entertainments/new", to: 'entertainments#new'
+  get "/movies/:id", to: 'entertainments#show'
+  get"/movies", to: 'entertainments#index'
+  # get "/the_boss", to: 'entertainments#the_boss'
+  # get "/arrow", to: 'entertainments#arrow'
+  # get "/flash", to: 'entertainments#the_flash'
+
+   post "/entertainments", to: 'entertainments#create'
 
 end
