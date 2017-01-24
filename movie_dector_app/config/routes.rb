@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   # get "/arrow", to: 'entertainments#arrow'
   # get "/flash", to: 'entertainments#the_flash'
 
-   post "/entertainments", to: 'entertainments#create'
+   post "/movies", to: 'entertainments#create'
 
 end
