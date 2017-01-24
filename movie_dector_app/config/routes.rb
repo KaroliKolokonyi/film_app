@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   # get "/arrow", to: 'entertainments#arrow'
   # get "/flash", to: 'entertainments#the_flash'
 
-   post "/movies", to: 'entertainments#create'
+  post "/movies", to: 'entertainments#create'
+  get "/movies/:id/edit", to: 'entertainments#edit'
+  patch "/movies/:id", to: 'entertainments#update'
 
 end

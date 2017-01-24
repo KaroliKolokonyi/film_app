@@ -29,6 +29,21 @@ movie4 = Movie.new({film_name: film_name, film_type: film_type, film_genre: film
   render "create.html.erb"
 end 
 
+def edit
+  @movies = Movie.find_by(id: params[:id])
+end 
+
+def update
+    @movies = Movie.find_by(id: params[:id])
+    @movies.film_name = params[:film_name]
+    @movies.film_type = params[:film_type]
+    @movies.film_genre = params[:film_genre]
+    @movies.production_year = params[:production_year]
+    @movies.save
+  end
+
+
+
   # def arrow 
   #   @arrow=Movie.first 
 
